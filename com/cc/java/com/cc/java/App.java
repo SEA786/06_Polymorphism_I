@@ -25,30 +25,43 @@ public class App {
             pollObj(queen);
             pollObj(worker);
             pollObj(drone);
-    }
+
+            HoneyBee bee = new HoneyBee();
+            pollObj(bee);
 
 
-        // Overloading
-        private static void pollObj(Queen obj){
-            output(obj.doYourJob());
-             output("----------------");
-         }
-    
-    
-         // Overloading
-         private static void pollObj(Worker obj){
-            output(obj.doYourJob());
-            output(obj.fly());
-           output("----------------");
-       }
-    
-    
-        // Overloading
-        private static void pollObj(Drone obj){
-            output(obj.doYourJob());
-             output(obj.fly());
-             output("----------------");
         }
+
+
+private static void pollObj(HoneyBee obj){
+     output(obj.doYourJob());
+     output(obj.fly());
+     output("------------------");
+
+}
+
+
+    // Overloading
+    //     private static void pollObj(Queen obj){
+    //         output(obj.doYourJob());
+    //          output("----------------");
+    //      }
+    
+    
+    //      // Overloading
+    //      private static void pollObj(Worker obj){
+    //         output(obj.doYourJob());
+    //         output(obj.fly());
+    //        output("----------------");
+    //    }
+    
+    
+    //     // Overloading
+    //     private static void pollObj(Drone obj){
+    //         output(obj.doYourJob());
+    //          output(obj.fly());
+    //          output("----------------");
+    //     }
 
             
   
@@ -56,7 +69,4 @@ public class App {
     private static void output(String outputStr) {
         System.out.println(outputStr);
     }
-
-
-
 };
