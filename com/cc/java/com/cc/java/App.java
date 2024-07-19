@@ -15,8 +15,10 @@ public class App {
         output(worker.doYourJob());
         output(worker.fly());
         output ("------------------");
+        
         output(drone.doYourJob());
-        output(drone.fly());output ("------------------");
+        output(drone.fly());
+        output ("------------------");
 
     }
 
